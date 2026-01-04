@@ -2,7 +2,7 @@ import icon1 from "../Assests/happy-farmer-agriculture-farming-symbol-vector-ill
 import icon2 from "../Assests/vecteezy_extraordinary-artistic-urban-farmer-holding-fresh-produce_57721627.png"
 const Navbar = () => {
   return (
-    <nav className="flex justify-between items-center    text-white">
+    <nav className="flex justify-between items-center  border border-solid border-black   text-white">
 
       {/* Logo */}
       <div className="flex items-center text-xl font-bold  py-3  w-full bg-green-950" >
@@ -11,7 +11,9 @@ const Navbar = () => {
             src={icon1}
             alt="logo"
             width={80}
-            className=" rounded-2xl border-2 border-black p-1 bg-white  "
+            className="rounded-2xl border-4 border-gray-950 p-1 bg-white"
+
+
           />
 
           <h1 className="text-white m-[20px]">
@@ -24,7 +26,7 @@ const Navbar = () => {
           <a href="#" className="hover:text-green-500 transition">Retailers</a>
           <a href="#" className="hover:text-green-500 transition">Reports</a>
         </div>
-        <div  className=" bg-white p-1 border border-solid border-black p-1 bg-white ml-[2%]  rounded-xl flex  items-center">
+        <div  className=" bg-white p-1  border-4 border-gray-950  ml-[2%]  rounded-xl flex  items-center">
           <img
             src={icon2}
             alt="profile"
