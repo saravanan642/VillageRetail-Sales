@@ -33,7 +33,7 @@ const Navbar = () => {
             width={50}
            
           />
-          <a className=" text-gray-800  pr-[20px]   underline cursor-pointer hover:text-lime-600">Login</a>
+          <a className=" text-gray-800  pr-[20px]   underline cursor-pointer hover:text-lime-600" href="kvk">Login</a>
         </div>
       </div>
 
