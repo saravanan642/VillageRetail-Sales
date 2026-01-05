@@ -37,7 +37,7 @@ const Navbar = () => {
         
           <div className="hidden md:flex bg-white p-1 border-4 border-gray-950 ml-[2%] rounded-xl items-center">
             <img src={icon2} alt="profile" width={50} />
-            <a className="text-gray-800 pr-[20px] underline cursor-pointer hover:text-lime-600" >
+            <a className="text-gray-800 pr-[20px] underline cursor-pointer hover:text-lime-600" href="#login">
               Login
             </a>
           </div>
