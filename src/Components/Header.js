@@ -1,44 +1,74 @@
-import icon1 from "../Assests/happy-farmer-agriculture-farming-symbol-vector-illustration-2D7RD94.jpg"
-import icon2 from "../Assests/vecteezy_extraordinary-artistic-urban-farmer-holding-fresh-produce_57721627.png"
+import icon1 from "../Assests/happy-farmer-agriculture-farming-symbol-vector-illustration-2D7RD94.jpg";
+import icon2 from "../Assests/vecteezy_extraordinary-artistic-urban-farmer-holding-fresh-produce_57721627.png";
+import { useState } from "react";
+
 const Navbar = () => {
+  const [menu, setMenu] = useState(false);
+
   return (
-    <nav className="flex justify-between items-center  border border-solid border-black   text-white">
+    <>
+     
+      <nav className="relative flex justify-between items-center border border-black text-white">
 
-      {/* Logo */}
-      <div className="flex items-center text-xl font-bold  py-3  w-full bg-green-950" >
-        <div className=" flex  ml-[80px]">
-          <img
-            src={icon1}
-            alt="logo"
-            width={80}
-            className="rounded-2xl border-4 border-gray-950 p-1 bg-white"
+      
+        <div className="flex items-center text-xl font-bold py-3 w-full bg-green-950">
 
+        
+          <div className="flex ml-[80px]">
+            <img
+              src={icon1}
+              alt="logo"
+              width={80}
+              className="rounded-2xl border-4 border-gray-950 p-1 bg-white"
+            />
+            <h1 className="text-white m-[20px]">
+              VillageRetail Sales
+            </h1>
+          </div>
 
-          />
+ 
+          <div className="hidden md:flex gap-[70px] ml-[25%] mr-[5%]">
+            <a className="hover:text-green-500 transition">Home</a>
+            <a className="hover:text-green-500 transition">Sales</a>
+            <a className="hover:text-green-500 transition">Retailers</a>
+            <a className="hover:text-green-500 transition">Reports</a>
+          </div>
 
-          <h1 className="text-white m-[20px]">
-            VillageRetail Sales
-          </h1></div>
-
-        <div className="   flex gap-[70px]  ml-[25%] mr-[5%]">
-          <a href="#" className="hover:text-green-500 transition">Home</a>
-          <a href="#" className="hover:text-green-500 transition">Sales</a>
-          <a href="#" className="hover:text-green-500 transition">Retailers</a>
-          <a href="#" className="hover:text-green-500 transition">Reports</a>
+        
+          <div className="hidden md:flex bg-white p-1 border-4 border-gray-950 ml-[2%] rounded-xl items-center">
+            <img src={icon2} alt="profile" width={50} />
+            <a className="text-gray-800 pr-[20px] underline cursor-pointer hover:text-lime-600">
+              Login
+            </a>
+          </div>
         </div>
-        <div  className=" bg-white p-1  border-4 border-gray-950  ml-[2%]  rounded-xl flex  items-center">
-          <img
-            src={icon2}
-            alt="profile"
-            width={50}
-           
-          />
-          <a className=" text-gray-800  pr-[20px]   underline cursor-pointer hover:text-lime-600" href="kvk">Login</a>
+
+ 
+        <button
+          onClick={() => setMenu(!menu)}
+          className="md:hidden absolute right-6 top-6 text-white text-4xl z-50"
+        >
+          ☰
+        </button>
+      </nav>
+
+      
+      {menu && (
+        <div className="md:hidden bg-green-900 text-white px-6 py-4 space-y-4">
+          <p className="hover:text-green-400">Home</p>
+          <p className="hover:text-green-400">Sales</p>
+          <p className="hover:text-green-400">Retailers</p>
+          <p className="hover:text-green-400">Reports</p>
+
+          <div className="bg-white text-black p-2 rounded-xl flex items-center gap-2 w-fit">
+            <img src={icon2} width={40} />
+            <span className="underline cursor-pointer hover:text-lime-600">
+              Login
+            </span>
+          </div>
         </div>
-      </div>
-
-
-    </nav>
+      )}
+    </>
   );
 };
 
