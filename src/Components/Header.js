@@ -55,10 +55,10 @@ const Navbar = () => {
       
       {menu && (
         <div className="md:hidden bg-green-900 text-white px-6 py-4 space-y-4">
-          <p className="hover:text-green-400">Home</p>
-          <p className="hover:text-green-400">Sales</p>
-          <p className="hover:text-green-400">Retailers</p>
-          <p className="hover:text-green-400">Reports</p>
+          <a className="hover:text-green-400">Home</a>
+          <a className="hover:text-green-400">Sales</a>
+          <a className="hover:text-green-400">Retailers</a>
+          <a className="hover:text-green-400">Reports</a>
 
           <div className="bg-white text-black p-2 rounded-xl flex items-center gap-2 w-fit">
             <img src={icon2} width={40} />
