@@ -28,8 +28,8 @@ const Navbar = () => {
 
  
           <div className="hidden md:flex gap-[70px] ml-[25%] mr-[5%]">
-            <a className="hover:text-green-500 transition" href="#Home">Home</a>
-            <a className="hover:text-green-500 transition" href="#About">About</a>
+            <a className="hover:text-green-500 transition" href="Home">Home</a>
+            <a className="hover:text-green-500 transition" href="About">About</a>
             <a className="hover:text-green-500 transition"  href="Retailers"> Retailers</a>
             <a className="hover:text-green-500 transition" href="Contacts">Contacts</a>
           </div>
@@ -37,7 +37,7 @@ const Navbar = () => {
         
           <div className="hidden md:flex bg-white p-1 border-4 border-gray-950 ml-[2%] rounded-xl items-center">
             <img src={icon2} alt="profile" width={50} />
-            <a className="text-gray-800 pr-[20px] underline cursor-pointer hover:text-lime-600" href="#login">
+            <a className="text-gray-800 pr-[20px] underline cursor-pointer hover:text-lime-600" href="login">
               Login
             </a>
           </div>
@@ -53,21 +53,51 @@ const Navbar = () => {
       </nav>
 
       
-      {menu && (
-        <div className="md:hidden bg-green-900 text-white px-6 py-4 space-y-4">
-          <a className="hover:text-green-400">Home</a>
-          <a className="hover:text-green-400">Sales</a>
-          <a className="hover:text-green-400">Retailers</a>
-          <a className="hover:text-green-400">Reports</a>
+{menu && (
+  <div className="md:hidden bg-green-900 text-white px-6 py-4 space-y-4">
 
-          <div className="bg-white text-black p-2 rounded-xl flex items-center gap-2 w-fit">
-            <img src={icon2} width={40} />
-            <span className="underline cursor-pointer hover:text-lime-600">
-              Login
-            </span>
-          </div>
-        </div>
-      )}
+    <a
+      className="block hover:text-green-400"
+      href="Home"
+    >
+      Home
+    </a>
+
+    <a
+      className="block hover:text-green-400"
+      href="Sales"
+    >
+      Sales
+    </a>
+
+    <a
+      className="block hover:text-green-400"
+      href="Retailers"
+    >
+      Retailers
+    </a>
+
+    <a
+      className="block hover:text-green-400"
+      href="Reports"
+    >
+      Reports
+    </a>
+
+    <div className="bg-white text-black p-2 rounded-xl flex items-center gap-2 w-fit">
+      <img src={icon2} width={40} />
+      <a
+        className="underline cursor-pointer hover:text-lime-600"
+        href="login"
+      >
+        Login
+      </a>
+    </div>
+
+  </div>
+)}
+
+      
     </>
   );
 };
