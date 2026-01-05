@@ -28,16 +28,16 @@ const Navbar = () => {
 
  
           <div className="hidden md:flex gap-[70px] ml-[25%] mr-[5%]">
-            <a className="hover:text-green-500 transition">Home</a>
-            <a className="hover:text-green-500 transition">Sales</a>
-            <a className="hover:text-green-500 transition">Retailers</a>
-            <a className="hover:text-green-500 transition">Reports</a>
+            <a className="hover:text-green-500 transition" href="#Home">Home</a>
+            <a className="hover:text-green-500 transition" href="#About">About</a>
+            <a className="hover:text-green-500 transition"  href="Retailers"> Retailers</a>
+            <a className="hover:text-green-500 transition" href="Contacts">Contacts</a>
           </div>
 
         
           <div className="hidden md:flex bg-white p-1 border-4 border-gray-950 ml-[2%] rounded-xl items-center">
             <img src={icon2} alt="profile" width={50} />
-            <a className="text-gray-800 pr-[20px] underline cursor-pointer hover:text-lime-600">
+            <a className="text-gray-800 pr-[20px] underline cursor-pointer hover:text-lime-600" >
               Login
             </a>
           </div>
