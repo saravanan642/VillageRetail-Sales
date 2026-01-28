@@ -24,7 +24,21 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <div >
-            <div className="hidden md:flex gap-[50%]  text-xl ml-[20%]">
+            <div className="  
+              lg:font-bold
+              lg:flex
+              lg:text-xl
+              lg:ml-[70%]
+              gap-[140%]
+
+              md:flex hidden
+              md:font-normal
+              
+              md:gap-[50%]
+
+              
+              
+              ">
               <a className="hover:text-green-400" href="Home">Home</a>
               <a className="hover:text-green-400" href="Retailers">Retailers</a>
               <a className="hover:text-green-400" href="Services">Services</a>
