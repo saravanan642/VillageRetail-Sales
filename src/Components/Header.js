@@ -29,7 +29,7 @@ const Navbar = () => {
               lg:flex
               lg:text-xl
               lg:ml-[70%]
-              gap-[140%]
+              lg:gap-[90%]
 
               md:flex hidden
               md:font-normal
