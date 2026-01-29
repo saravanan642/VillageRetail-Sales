@@ -2,15 +2,17 @@ import React from "react";
 
 const Sample = () => {
   return (
-    <header className="bg-black text-white px-6 py-4">
-      <div className="flex items-center gap-8 justify-between">
+    <header className="">
+      {/* <div className="flex items-center gap-8 justify-between bg-black text-white px-6 py-4
+      lg:text-green-950
+      md:text-red-900
+      sm:text-orange-950
+      ">
         
-        {/* Logo */}
-        <h1 className="text-xl font-bold text-green-400 ml-[10%]">
+        <h1 className="text-xl font-bold  ml-[10%] ">
           MySite
         </h1>
 
-        {/* Menu */}
         <nav className="flex gap-[30%] mr-[30%]">
           <a className="hover:text-green-400" href="Home">Home</a>
           <a className="hover:text-green-400" href="Retailers">Retailers</a>
@@ -18,7 +20,11 @@ const Sample = () => {
           <a className="hover:text-green-400" href="About">About</a>
         </nav>
 
-      </div>
+      </div> */}
+
+      <p className=" text-green-700 md:text-3xl sm:text-red-800 lg:text-indigo-500">welcome to React App using the Responsive</p>
+
+      <h1>Saravanan</h1>
     </header>
   );
 };
